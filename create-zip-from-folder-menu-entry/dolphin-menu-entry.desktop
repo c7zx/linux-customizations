@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+MimeType=inode/directory;
+Actions=createZipFromFolder;
+X-KDE-Priority=TopLevel
+
+[Desktop Action createZipFromFolder]
+Name=Create ZIP from Folder
+Icon=application-zip
+Exec=/bin/sh -c "exec \\"\\$HOME/.local/bin/create-zip-from-folder-menu-entry\\" \\"\\$@\\"" sh %F
